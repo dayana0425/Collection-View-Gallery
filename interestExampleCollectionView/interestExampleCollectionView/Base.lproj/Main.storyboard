@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UGq-2k-DMP">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="1t3-Jp-Seb">
+            <objects>
+                <viewController id="UGq-2k-DMP" customClass="homeViewController" customModule="interestExampleCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FW8-H5-2Dt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="vz2-0K-iY9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uf8-96-8j7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LEv-sZ-6yV">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9fn-sC-xQL">
+                                            <rect key="frame" x="0.0" y="229" width="414" height="430"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="PZ3-ht-J6Q">
+                                                <size key="itemSize" width="280" height="380"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Vibe Cell" id="Kq9-3v-Kbo" customClass="CollectionViewCell" customModule="interestExampleCollectionView" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="25" width="280" height="380"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="NfD-WR-ZW0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="386"/>
+                                                            </imageView>
+                                                            <visualEffectView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1x-Mh-Abg">
+                                                                <rect key="frame" x="0.0" y="300" width="280" height="80"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0uS-kF-Kj2">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="80"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3Y-53-tOE">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="280" height="80"/>
+                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="elo-Sx-LuS">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="80"/>
+                                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Travel Vibes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xr0-ZT-3jo">
+                                                                                        <rect key="frame" x="8" y="8" width="264" height="64"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </view>
+                                                                            <blurEffect style="extraLight"/>
+                                                                        </visualEffectView>
+                                                                    </subviews>
+                                                                </view>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="80" id="EVA-4Q-WmD"/>
+                                                                </constraints>
+                                                                <blurEffect style="extraLight"/>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstItem="NfD-WR-ZW0" firstAttribute="leading" secondItem="Kq9-3v-Kbo" secondAttribute="leading" id="JTz-jx-PAg"/>
+                                                        <constraint firstAttribute="bottom" secondItem="NfD-WR-ZW0" secondAttribute="bottom" constant="-6" id="NTm-ao-2rq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NfD-WR-ZW0" secondAttribute="trailing" id="Twv-sH-PaF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="n1x-Mh-Abg" secondAttribute="trailing" id="gQj-9A-jO5"/>
+                                                        <constraint firstItem="NfD-WR-ZW0" firstAttribute="top" secondItem="Kq9-3v-Kbo" secondAttribute="top" id="oKY-Th-gr1"/>
+                                                        <constraint firstItem="n1x-Mh-Abg" firstAttribute="leading" secondItem="Kq9-3v-Kbo" secondAttribute="leading" id="rKJ-Cw-lgX"/>
+                                                        <constraint firstAttribute="bottom" secondItem="n1x-Mh-Abg" secondAttribute="bottom" id="xEX-Ld-HJV"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="featuredImageView" destination="NfD-WR-ZW0" id="2zt-HK-uw8"/>
+                                                        <outlet property="interestTitleLable" destination="xr0-ZT-3jo" id="38h-7w-DDN"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="UGq-2k-DMP" id="RMY-JE-YX6"/>
+                                                <outlet property="delegate" destination="UGq-2k-DMP" id="7ha-As-i8a"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vz2-0K-iY9" firstAttribute="top" secondItem="mEg-NV-pHF" secondAttribute="top" id="1WC-eC-Ctq"/>
+                            <constraint firstItem="vz2-0K-iY9" firstAttribute="top" secondItem="mEg-NV-pHF" secondAttribute="top" id="Hgs-9l-bZl"/>
+                            <constraint firstAttribute="trailing" secondItem="vz2-0K-iY9" secondAttribute="trailing" id="I1r-EE-nUo"/>
+                            <constraint firstItem="vz2-0K-iY9" firstAttribute="trailing" secondItem="mEg-NV-pHF" secondAttribute="trailing" id="PNz-5J-ICp"/>
+                            <constraint firstItem="uf8-96-8j7" firstAttribute="trailing" secondItem="mEg-NV-pHF" secondAttribute="trailing" id="QSv-Qc-5ML"/>
+                            <constraint firstItem="vz2-0K-iY9" firstAttribute="leading" secondItem="mEg-NV-pHF" secondAttribute="leading" id="dNo-b1-Aew"/>
+                            <constraint firstAttribute="bottom" secondItem="vz2-0K-iY9" secondAttribute="bottom" id="ese-vB-3Tk"/>
+                            <constraint firstItem="uf8-96-8j7" firstAttribute="bottom" secondItem="mEg-NV-pHF" secondAttribute="bottom" id="fQL-2P-8ej"/>
+                            <constraint firstItem="vz2-0K-iY9" firstAttribute="leading" secondItem="mEg-NV-pHF" secondAttribute="leading" id="kFd-vf-M1n"/>
+                            <constraint firstItem="uf8-96-8j7" firstAttribute="leading" secondItem="mEg-NV-pHF" secondAttribute="leading" id="sWJ-Ge-Hzw"/>
+                            <constraint firstItem="uf8-96-8j7" firstAttribute="top" secondItem="mEg-NV-pHF" secondAttribute="top" id="sx6-ba-zBk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mEg-NV-pHF"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="vz2-0K-iY9" id="HyJ-bu-zjv"/>
+                        <outlet property="collectionView" destination="9fn-sC-xQL" id="Jnm-G3-HY0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frl-VK-qTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="-170.08928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="194" height="260"/>
+        <image name="background" width="1125" height="2436"/>
+    </resources>
+</document>
